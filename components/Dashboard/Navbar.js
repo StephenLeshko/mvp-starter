@@ -3,12 +3,14 @@ import styled from 'styled-components';
 import Link from 'next/link'
 import { logOut } from '@/backend/Auth';
 import { useStateContext } from '@/context/StateContext';
+import Home from '@/components/Dashboard/Home'
 const Navbar = () => {
   const { setUser } = useStateContext()
 
   return (
     <Nav>
       <Logo onClick={() => logOut(setUser)} href="/">MVP</Logo>
+      <Home></Home>
       <NavLinks>
         <ButtonLink href="/auth/signup">Sign Up</ButtonLink>
         <ButtonLink href="/auth/login">Login</ButtonLink>
