@@ -5,7 +5,13 @@ import { getStorage } from "firebase/storage";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = process.env.NODE_ENV === 'production' ? {
-    //production firebase info here
+  apiKey: "AIzaSyAiaFktju4t5jIEOS5D1kVdPUjeOVLYpYA",
+  authDomain: "mvp-starter-8b994.firebaseapp.com",
+  projectId: "mvp-starter-8b994",
+  storageBucket: "mvp-starter-8b994.appspot.com",
+  messagingSenderId: "1090868381027",
+  appId: "1:1090868381027:web:088811e04d5857b1eeff56",
+  measurementId: "G-SQG8HKC9DP"
 } : {
   apiKey: "AIzaSyAiaFktju4t5jIEOS5D1kVdPUjeOVLYpYA",
   authDomain: "mvp-starter-8b994.firebaseapp.com",
